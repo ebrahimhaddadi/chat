@@ -1,0 +1,70 @@
+/*body{*/
+/*    background-color: #f8f9fa;*/
+/*    font-family: sans-serif;*/
+/*}*/
+/*#chatBox{*/
+/*    background-color: #fff;*/
+/*    border-radius: 8px;*/
+/*}*/
+/*.message{*/
+/*    margin: 10px 0;*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+
+/*}*/
+/*.message.sent{*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*    text-align: left;*/
+/*}*/
+/*.message.received{*/
+/*    background-color: #e9ecef;*/
+/*    text-align: right;*/
+/*}*/
+/*.back_video{*/
+/*}*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+/* ویدیو تمام‌صفحه */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* محتوای روی ویدیو */
+.content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
